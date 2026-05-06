@@ -8,4 +8,5 @@ venv/
 env/
 .env
 outputs/*.png
+!outputs/data_center_flow.png
 !outputs/.gitkeep

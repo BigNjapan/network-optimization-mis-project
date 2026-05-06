@@ -75,6 +75,8 @@ The script also saves a network visualization to:
 outputs/data_center_flow.png
 ```
 
+![Data center maximum flow network](outputs/data_center_flow.png)
+
 In the plot, each directed edge is labeled as:
 
 ```text
