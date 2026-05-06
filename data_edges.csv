@@ -1,0 +1,14 @@
+source,target,capacity_mbps,description
+Internet_Gateway,Load_Balancer,1000,Primary inbound traffic link to the load balancer
+Internet_Gateway,Cache_Node,400,Direct inbound link for cached content requests
+Load_Balancer,API_Server_A,600,Traffic distribution from load balancer to API server A
+Load_Balancer,API_Server_B,500,Traffic distribution from load balancer to API server B
+API_Server_A,Database_Cluster,350,Application queries from API server A to database cluster
+API_Server_A,Analytics_Dashboard,250,Processed traffic from API server A to analytics dashboard
+API_Server_B,Database_Cluster,300,Application queries from API server B to database cluster
+API_Server_B,Analytics_Dashboard,300,Processed traffic from API server B to analytics dashboard
+Cache_Node,API_Server_B,200,Cache miss traffic routed to API server B
+Cache_Node,Analytics_Dashboard,150,Cached metrics sent directly to analytics dashboard
+Database_Cluster,Analytics_Dashboard,500,Aggregated database output sent to analytics dashboard
+Database_Cluster,Backup_Service,200,Replication traffic sent from database cluster to backup service
+Backup_Service,Analytics_Dashboard,150,Backup status and replicated metrics sent to analytics dashboard
