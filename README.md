@@ -23,7 +23,7 @@ The network data is stored in `data_edges.csv`.
 | `capacity_mbps` | Maximum traffic that can pass through the connection | Megabits per second (Mbps) |
 | `description` | Business meaning of the connection | Text |
 
-The dataset is hypothetical but realistic for a small data center traffic model. It includes 8 nodes and 13 directed edges, satisfying the assignment requirement of at least 6 nodes and 8 edges.
+
 
 ## Method
 
